@@ -1,0 +1,156 @@
+#background{width:80%;
+margin:0 auto;
+}
+body{background-color:rgb(250,235,210);
+font-family:sans-serif;}
+.white{background-color:rgb(200,166,125);}
+.black{background-color:rgb(40,40,40);}
+.bordy{border:rgb(150,125,100) 2px solid;}
+.cllr{   color:rgb(225,225,225);}
+#home{
+grid-column:span 2;
+}
+#harambe a:hover{
+    background-color:rgb(250,235,210);
+    transition:0.3s;
+    color:rgb(40,40,40);
+}
+#harambe{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    text-align:center;
+    height:200px;
+}
+#harambe a{
+    padding-top:20px;
+    text-decoration:none;
+    font-variant:small-caps;
+    font-size:27px;
+    color:rgb(225,225,225);
+}
+#harambe a:hover{
+    background-color:;
+}
+#pieces #places{
+display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    height:1000px;
+}
+#pieces h2{
+    text-align:center;
+    font-size:30px;
+    text-transform:uppercase;
+    margin:0 auto;
+    height:50px;
+}
+#pieces #horse{
+    background-position:-650px -75px;
+    background-size: 4800px 900px;
+}
+#pieces #bishop{
+    background-position:-1400px -75px;
+    background-size: 4800px 900px;
+}
+#pieces #places > div:nth-child(-n+5){
+    background-image:url("../sliki/sui.png");
+    position:relative;
+}
+#pieces #king{
+    background-position:-2000px -25px;
+    background-size: 4800px 900px;
+}
+#pieces #queen{
+    background-position:-2600px -25px;
+    background-size: 4800px 900px;
+}
+#pieces #pawn{
+    background-image:url("../sliki/pawn.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:50% 150px;
+    position:relative;
+}
+#pieces #top{
+background-position:0 -150px;
+    background-size: 4800px 900px;
+}
+#pieces #places > div:hover{
+    transition:0.3s;
+    opacity:0.3;
+    background-color:rgb(200,166,125);
+
+}
+.yo {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border-top:10px solid rgb(75,75,75);
+    border-bottom:10px solid rgb(75,75,75);
+}
+#pieces #places > div:hover .yo{display:block;}
+#pieces p{
+    color:white;
+    font-size:35px;
+    text-align:center;
+    font-variant:small-caps;
+}
+
+#ChessOpening > div{
+    display:flex;
+    flex-wrap:wrap;
+}
+#ChessOpening > div h4{
+    color:rgb(50,50,50);
+    font-size:30px;
+    font-weight:500;
+    text-align:center;
+}
+#ChessOpening{
+    grid-row:span 3;
+}
+#ChessOpening > div h3{
+    color:rgb(40,40,40);
+    font-size:24px;
+    font-weight:600;
+    text-align:center;
+}
+
+#online img{
+    width:100%;
+}
+#online a{
+    display:inline-block;
+    width:45%;
+}
+#ChessOpening h2{
+    margin:0;
+}
+#popravka{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
+#history{
+    grid-row:span 2;
+}
+#history h5{
+    font-size:25px;
+    color:rgb(150,125,100);
+}
+#history h1{
+    margin:0;
+    padding-top:20px;
+    padding-bottom:10px;
+}
+#history p{
+    font-weight:700;
+}
